@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title> Kotorbay Lore Manager </title>
+    <link rel="stylesheet" type="text/css" href="kblm.css" />
+    <script type="text/javascript" src="../../dependences/jquery.js" ></script>
+    <script type="text/javascript" src="../../dependences/vjswebtools.js" ></script>
+    <script type="text/javascript">vida.vtestlog("../vtestPass.php","../kblogin.html");</script>
+    <script type="text/javascript" src="kblm.js" ></script>
+</head>
+
+<body>
+
+    <div class="lmMainDiv">
+        <a class="goBack" href="../kbadmin.html" >GO BACK</a>
+        <p class="adminheader" >Lore Manager</p>
+        <hr/>
+        <div class="lmsavediv">
+            
+            <p class="ptitlelittle">lang: </p>
+            <select id="lmlang" class="lmtypelangSel" >
+                <option>english</option>
+                <option>russian</option>
+                <option>yugoslovenian</option>
+            </select>
+            
+            <p class="ptitlelittle">town: </p>
+            <select id="pmtown" class="lmtypelangSel" ></select>
+            
+            <p class="inputtitlesp"> name: </p>
+            <input id="lmname" type="text" class="lmnameinput" />
+            
+            <p class="inputtitlesp"> text: </p>
+            <textarea id="lmtext" class="lmtxtarea" ></textarea>
+            
+            <p class="inputtitlesp"> image selection: </p>
+            <div id="lmimgselection" ></div>
+            
+            <button type="button" id="lmocg" class="openclosegallery"> open/close gallery </button>
+            <div id="lmgalleryHolder"></div>
+            
+            <button type="button" id="lmAJAXsave" > SAVE </button>
+            
+        </div>
+        <div class="lmbrowsediv">
+            <p class="ptitlelittle">lang: </p>
+            <select id="loadLang" class="lmtypelangSel" >
+                <option>english</option>
+                <option>russian</option>
+                <option>yugoslovenian</option>
+            </select>
+            <div id="loadContentHereDiv"></div> 
+        </div>
+    </div>
+
+</body>
+</html>

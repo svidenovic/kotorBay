@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Kotorbay Gallery Manager </title>
+    <link rel="stylesheet" type="text/css" href="kbgm.css" />
+    <script type="text/javascript" src="../../dependences/jquery.js" ></script>
+    <script type="text/javascript" src="../../dependences/vjswebtools.js" ></script>
+    <script type="text/javascript">vida.vtestlog("../vtestPass.php","../kblogin.html");</script>
+    <script type="text/javascript" src="kbgm.js" ></script>
+</head>
+
+<body>
+
+    <div class="gmMainDiv">
+        <a class="goBack" href="../kbadmin.html" >GO BACK</a>
+        <p class="adminheader" >Gallery Manager</p>
+        <hr/>
+        <div id="uploadDiv">
+            <form action="kbImageUpload.php" method="post" enctype="multipart/form-data">
+                <input id="kbimg" name="kbimgs[]" type="file" multiple="multiple" min="1" max="100" />
+                <input id="kbthesubmit" type="submit" />
+            </form>
+        </div>
+        <div id="browseDiv">
+        </div>
+    </div>
+
+</body>
+</html>

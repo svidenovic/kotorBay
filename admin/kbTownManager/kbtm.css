@@ -1,0 +1,220 @@
+
+body {
+    background-color: #d2d2d2;
+}
+
+div.tmMainDiv {
+    display: block;
+    width: 900px;
+    height: 410px;
+    margin: 50px auto 100px auto;
+    background-color: #ffffff;
+    border: 1px solid #acacac;
+}
+
+a.goBack {
+    display: block;
+    width: 900px;
+    height: 20px;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 0 0;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+a:hover.goBack
+{ background-color: #e8e8e8; }
+
+p.adminheader {
+    display: block;
+    width: 900px;
+    height: 30px;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 0 0;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 26px;
+    cursor: default;
+}
+
+hr {
+    border-top: 1px solid #acacac;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+div.tmsavediv {
+    display: block;
+    float: left;
+    overflow: auto;
+    width: 538px;
+    /*height: 750px;*/
+    height: auto;
+    margin: 5px 5px 100px 5px;
+    background-color: #ffffff;
+    border: 1px solid #acacac;
+}
+
+div.tmbrowsediv {
+    display: block;
+    float: left;
+    overflow: auto;
+    width: 338px;
+    height: 287px;
+    margin: 5px 5px 100px 5px;
+    background-color: #ffffff;
+    border: 1px solid #acacac;
+}
+p.inputtitlesp {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 20px;
+    padding: 5px 0 5px 10px;
+    margin: 10px 0 0 0;
+    background-color: transparent;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 18px;
+    cursor: default;
+}
+
+input.tmnameinput {
+    width: 388px;
+    height: 30px;
+    border: 1px solid #acacac;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 16px;
+    outline: none;
+    margin: 0 0 10px 10px;
+    padding: 5px;
+}
+
+button.openclosegallery {
+    width: 492px;
+    height: 30px;
+    padding: 5px;
+    margin: 50px 0 0 10px;
+    float: left;
+}
+
+div#tmgalleryHolder {
+    width: 480px;
+    height: 216px;
+    border: 1px solid #acacac;
+    background-color: #E5E5E5;
+    display: block;
+    float: left;
+    padding: 5px;
+    margin: 0 0 10px 10px;
+    overflow: auto;
+}
+
+img.smallimgs {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #acacac;
+    background-color: #ffffff;
+    float: left;
+    display: block;
+}
+img:hover.smallimgs
+{ border: 1px solid #c99918; background-color: #ffd565; }
+img:active.smallimgs
+{ border: 1px solid #c99918; background-color: #c99918; }
+
+div.nothing {
+    width: 420px;
+    height: auto;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+img#tmMainImg {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #acacac;
+    background-color: #ffffff;
+    float: left;
+    display: block;
+}
+
+p.ptitlelittle {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 20px;
+    padding: 5px 0 5px 10px;
+    margin: 10px 0 0 0;
+    background-color: transparent;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 18px;
+    cursor: default;
+}
+
+select.tmtypelangSel {
+    width: 200px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 1px solid #acacac;
+    display: block;
+    float: left;
+    margin: 10px 0 0 0;
+    outline: none;
+}
+
+button#tmAJAXsave {
+    width: 192px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin: 20px 10px 50px 160px;
+}
+
+div#loadContentHereDiv {
+    display: block;
+    float: left;
+    overflow: auto;
+    width: 326px;
+    height: 275px;
+    margin: 5px 5px 0 5px;
+    background-color: #ffffff;
+    border: 1px solid #acacac;
+}
+
+p.pNmopenPar {
+    display: block;
+    width: 285px;
+    height: 15px;
+    padding: 5px;
+    float: left;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px 0 0 5px;
+    border: hidden;
+    border-radius: 5pt;
+}
+p:hover.pNmopenPar
+{ background-color: #ffd565; color: #ffffff; }
+p:active.pNmopenPar
+{ background-color: #ffd565; color: #c99918; }

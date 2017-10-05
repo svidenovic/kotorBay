@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> image viewer </title>
+    <style type="text/css" >
+    
+    body {
+        background-image: url("ivBGimg.png");
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+        background-color: #afaeae;
+    }
+    
+    div.LBRholderdiv {
+        width: 170px;
+        height: 30px;
+        margin: 20px auto 5px auto;
+        background-color: transparent;
+    }
+    
+    button.LRarrowbutton {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        background-color: transparent;
+        background-image: url("frameBGpattern.png");
+        background-repeat: repeat;
+        border: 1px solid #000000;
+        border-radius: 5pt;
+        outline: none;
+        float: left;
+        color: #000000;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+    button:hover.LRarrowbutton  { color: #ffffff; }
+    button:active.LRarrowbutton { color: #7feb55; }
+    
+    a.backAnchor {
+        display: block;
+        text-decoration: none;
+        width: 98px;
+        height: 18px;
+        border: 1px solid #000000;
+        border-radius: 5pt;
+        padding: 5px 0 5px 0;
+        margin: 0 5px 0 5px;
+        color: #000000;
+        font-family: sans-serif;
+        font-size: 16px;
+        text-align: center;
+        background-color: transparent;
+        background-image: url("frameBGpattern.png");
+        background-repeat: repeat;
+        cursor: pointer;
+        float: left;
+    }
+    a:hover.backAnchor { color: #ffffff; font-weight: bold; }
+    a:active.backAnchor { color: #7feb55; }
+    
+    img.openImgImg {
+        display: block;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        border: 1px solid #000000;
+        border-radius: 5pt;
+        padding: 10px;
+        background-color: transparent;
+        background-image: url("frameBGpattern.png");
+        background-repeat: repeat;
+    }
+    </style>
+    <script type="text/javascript" src="../jquery.js" ></script>
+    <script type="text/javascript" src="../vjswebtools.js" ></script>
+    <script type="text/javascript" >
+    var image_array = new Array();
+    var numOimgs = 0;
+    var imgpos = 1;
+    var backloc = "";
+    function iVload()
+    {
+        var hash = vida.getUrlVars();
+        var num = parseInt( hash["ias"] );
+        var imgs = unescape( hash["imgs"] );
+        var nOimg2open = parseInt( hash["nOimg2open"] );
+        imgpos = nOimg2open+1;
+        backloc = unescape( hash["backloc"] );
+        var anc = document.getElementById("backlink");
+            anc.setAttribute( "href", backloc );
+        var sep = "";
+        var arr = new Array();
+        if( num <= 1 ){
+            arr[0] = imgs;
+            $("button#Larrowbutton").css( "visibility", "hidden" );
+            $("button#Rarrowbutton").css( "visibility", "hidden" );
+        }
+        else if( num > 1 ){
+            sep = unescape( hash["sep"] );
+            arr = vida.vStrTrans2arr( imgs, sep );
+            $("button#Larrowbutton").css( "visibility", "visible" );
+            $("button#Rarrowbutton").css( "visibility", "visible" );
+        }
+        image_array = arr;
+        showimage( image_array[ nOimg2open ] );
+    }
+    function go_left()
+    {
+        numOimgs = image_array.length;
+        if( imgpos == 1 ){ imgpos = numOimgs+1; }
+        imgpos -= 1;
+        showimage( image_array[ imgpos-1 ] );
+    }
+    function go_right()
+    {
+        numOimgs = image_array.length;
+        if( imgpos == numOimgs ){ imgpos = 0; }
+        imgpos += 1;
+        showimage( image_array[ imgpos-1 ] );
+    }
+    function showimage( thisrc )
+    {
+        var imgelement = document.getElementById( "openImageImage" );
+        imgelement.setAttribute( "src", thisrc );
+    }
+    </script>
+</head>
+
+<body onload="iVload();" >
+
+    <div class="LBRholderdiv" >
+        <button type="button" class="LRarrowbutton" id="Larrowbutton" onclick="go_left();" > < </button>
+        <a id="backlink" href="#" class="backAnchor" >BACK</a>
+        <button type="button" class="LRarrowbutton" id="Rarrowbutton" onclick="go_right();" > > </button>
+    </div>
+    <img class="openImgImg" id="openImageImage" src="" />
+
+</body>
+</html>

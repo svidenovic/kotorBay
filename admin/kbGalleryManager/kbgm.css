@@ -1,0 +1,87 @@
+
+body {
+    background-color: #d2d2d2;
+}
+
+div.gmMainDiv {
+    display: block;
+    width: 800px;
+    height: 200px;
+    margin: 50px auto 100px auto;
+    background-color: #ffffff;
+    border: 1px solid #acacac;
+}
+
+a.goBack {
+    display: block;
+    width: 800px;
+    height: 20px;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 0 0;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+a:hover.goBack
+{ background-color: #e8e8e8; }
+
+p.adminheader {
+    display: block;
+    width: 800px;
+    height: 30px;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 0 0;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    color: #535353;
+    font-family: sans-serif;
+    font-size: 26px;
+    cursor: default;
+}
+
+hr {
+    border-top: 1px solid #acacac;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+div#uploadDiv {
+    width: 568px;
+    height: 34px;
+    padding: 10px 0 0 10px;
+    float: left;
+    border: 1px solid #acacac;
+    margin: 5px 100px 5px 100px;
+    background-color: transparent;
+    overflow: auto;
+}
+
+div#browseDiv {
+    width: 732px;
+    min-height: 300px;
+    height: auto;
+    float: left;
+    border: 1px solid #acacac;
+    margin: 5px 5px 200px 13px;
+    padding: 20px;
+    background-color: #e8e8e8;
+}
+
+img.imgcss {
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #acacac;
+    background-color: #ffffff;
+    border-radius: 5pt 5pt;
+    margin: 5px;
+}
+img:hover.imgcss
+{ border: 1px solid #c99918; background-color: #ffd565; }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title> Kotorbay Places & Services Manager </title>
+    <link rel="stylesheet" type="text/css" href="kbpm.css" />
+    <script type="text/javascript" src="../../dependences/jquery.js" ></script>
+    <script type="text/javascript" src="../../dependences/vjswebtools.js" ></script>
+    <script type="text/javascript">vida.vtestlog("../vtestPass.php","../kblogin.html");</script>
+    <script type="text/javascript" src="kbpm.js" ></script>
+</head>
+
+<body>
+
+    <div class="pmMainDiv">
+        <a class="goBack" href="../kbadmin.html" >GO BACK</a>
+        <p class="adminheader" >Places & Services Manager</p>
+        <hr/>
+        <div class="pmsavediv">
+            <p class="ptitlelittle">type: </p>
+            <select id="pmtype" class="pmtypelangSel" >
+                <option>catering facilities</option>
+                <option>venues</option>
+                <option>services</option>
+            </select>
+            <p class="ptitlelittle">lang: </p>
+            <select id="pmlang" class="pmtypelangSel" >
+                <option>english</option>
+                <option>russian</option>
+                <option>yugoslovenian</option>
+            </select>
+            <p class="ptitlelittle">town: </p>
+            <select id="pmtown" class="pmtypelangSel" ></select>
+            <p class="ptitlelittle">stars: </p>
+            <select id="pmstars" class="pmtypelangSel" >
+                <option>none</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <p class="link2siteinp">link to site: </p>
+            <input id="pmlink2site" value="none" onchange="if(this.value==''){this.value='none';}" type="text" class="link2sitein" />
+            <input type="number" id="numOFvisits" value="0" />
+            
+            <div class="nothing">
+            <p class="inputtitlesp"> name: </p>
+            <input id="pmname" type="text" class="pmnameinput" />
+            </div>
+            <img id="pmMainImg" src="../../dependences/noimg.png" />
+            
+            <p class="inputtitlesp"> text: </p>
+            <textarea id="pmtext" class="pmtxtarea" ></textarea>
+            
+            <p class="inputtitlesp"> image selection: </p>
+            <div id="pmimgselection" ></div>
+            
+            <button type="button" id="pmocg" class="openclosegallery"> open/close gallery </button>
+            <div id="pmgalleryHolder"></div>
+            
+            <button type="button" id="pmAJAXsave" > SAVE </button>
+            
+        </div>
+        <div class="pmbrowsediv">
+            <p class="ptitlelittle">type: </p>
+            <select id="loadType" class="pmtypelangSel" >
+                <option>catering facilities</option>
+                <option>venues</option>
+                <option>services</option>
+            </select>
+            <br/><br/>
+            <p class="ptitlelittle">lang: </p>
+            <select id="loadLang" class="pmtypelangSel" >
+                <option>english</option>
+                <option>russian</option>
+                <option>yugoslovenian</option>
+            </select>
+            <br/><br/>
+            <div id="loadContentHereDiv"></div> 
+        </div>
+    </div>
+
+</body>
+</html>

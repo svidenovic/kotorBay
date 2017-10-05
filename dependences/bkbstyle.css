@@ -1,0 +1,1232 @@
+
+@font-face {
+    font-family: customfont1;
+    src: url("Haettenschweiler.ttf");
+}
+@font-face {
+    font-family: customfont2;
+    src: url("NK110.ttf");
+}
+@font-face {
+    font-family: customfont3;
+    src: url("NK174.ttf");
+}
+@font-face {
+    font-family: customfont4;
+    src: url("NK135.ttf");
+}
+@font-face {
+    font-family: customfont5;
+    src: url("LITOS.ttf");
+}
+@font-face {
+    font-family: customfont6;
+    src: url("NK_3.ttf");
+}
+
+body {
+    background-color: #84a1d4;
+    background-image: url("bodyBG.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+div#outmostDivHolder {
+    width: 1000px;
+    height: 600px;
+    background-color: transparent;
+    background-image: url("beautifulKotorbayBGimg1.png");
+    background-repeat: no-repeat;
+    margin: 10px auto 0 auto;
+    padding: 0;
+    position: relative;
+    display: block;
+    border: none;
+}
+
+div#d3buttonsHolder {
+    position: relative;
+    width: 480px;
+    height: 115px;
+    padding: 0 40px 0 40px;
+    display: block;
+    margin: 0 0 10px 220px;
+    opacity: 0;
+    float: left;
+    background-color: transparent;
+    background-image: url("bkbd3buttons.png");
+    background-repeat: no-repeat;
+}
+
+button.bkbMapSiteAbout {
+    width: 150px;
+    height: 50px;
+    margin: 5px 5px 0 5px;
+    border: none;
+    outline: none;
+    position: relative;
+    padding: 0;
+    display: block;
+    float: left;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: #f2c4a1;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 0.1em #000000;
+    border: none;
+    border-radius: 3px;
+    transition: margin 0.2s, color 0.3s;
+    -moz-transition: margin 0.2s, color 0.3s;
+    -webkit-transition: margin 0.2s, color 0.3s;
+    -o-transition: margin 0.2s, color 0.3s;
+}
+button#bkbMap { background-image: url("bkbMap.png"); }
+button#bkbSite { background-image: url("bkbSite.png"); }
+button#bkbAbout { background-image: url("bkbAbout.png"); }
+
+button:hover.bkbMapSiteAbout { margin: 0 5px 5px 5px; }
+button:active.bkbMapSiteAbout { color: #f4ddcc; font-weight: bold; text-shadow: none; }
+
+div.langBar {
+    position: relative;
+    width: 480px;
+    height: 30px;
+    padding: 0;
+    display: block;
+    margin: 30px 0 0 0;
+    float: left;
+    background-color: transparent;
+}
+p#langpar {
+    width: 150px;
+    height: 20px;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 0.1em #000000;
+    margin: 0 0 0 50px;
+    padding: 5px;
+    cursor: default;
+    background-color: transparent;
+    display: block;
+    float: left;
+    position: relative;
+}
+img.langimg {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: transparent;
+    margin: 0 10px 0 0;
+    float: left;
+    display: block;
+    border: none;
+    transition: outline 0.2s, opacity 0.2s;
+    -webkit-transition: outline 0.2s, opacity 0.2s;
+    -moz-transition: outline 0.2s, opacity 0.2s;
+    -o-transition: outline 0.2s, opacity 0.2s;
+}
+img:hover.langimg { outline: 1px solid #ead072; opacity:0.7; }
+
+div.siteMainDivHolder {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    min-height: 1430px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("siteMainDivHolder.png");
+    background-repeat: no-repeat;
+}
+
+div.bannercls {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin: 0;
+    background-color: transparent;
+}
+div.bannerDockcls {
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin: 0;
+    background-color: transparent;
+    background-image: url("bannerDock.png");
+    background-repeat: no-repeat;
+}
+div.slidesDivcls {
+    width: 850px;
+    height: 250px;
+    position: relative;
+    float: left;
+    margin: 0 0 0 75px;
+    background-color: #212121;
+    border: none;
+    border-radius: 10pt;
+}
+img.imgslides {
+    width: 840px;
+    height: 240px;
+    position: relative;
+    float: left;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    border-radius: 10pt;
+}
+div.slidesShadecls {
+    width: 850px;
+    height: 70px;
+    position: absolute;
+    float: left;
+    margin: 180px 0 0 75px;
+    background-color: transparent;
+    background-image: url("slidesShade.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10pt;
+    z-index: 50;
+}
+div.slidesshadowcls {
+    width: 850px;
+    height: 20px;
+    position: relative;
+    float: left;
+    margin: 0 0 0 75px;
+    background-color: transparent;
+    background-image: url("slidesShadow.png");
+    background-repeat: no-repeat;
+    border: none;
+}
+div.logoDivcls {
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    float: left;
+    margin: 130px 0 0 100px;
+    background-color: transparent;
+    background-image: url("bkbLogo.png");
+    background-repeat: no-repeat;
+    border: none;
+    z-index: 51;
+}
+
+div.separatorCls {
+    width: 1000px;
+    height: 30px;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("bkbseparator.png");
+    background-repeat: no-repeat;
+}
+
+div.siteContainerDiv {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0 0 30px 0;
+    background-color: transparent;
+    background-image: url("contentBGparticle.png");
+    background-repeat: repeat;
+    border: none;
+}
+div.mapContainerDiv {
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("contentBGparticle.png");
+    background-repeat: repeat;
+    border: none;
+}
+div.aboutContainerDiv {
+    width: 1000px;
+    height: 250px;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("contentBGparticle.png");
+    background-repeat: repeat;
+    border: none;
+}
+
+div.creditsDivcls {
+    position: relative;
+    float: left;
+    width: 1000px;
+    height: 50px;
+    background-color: transparent;
+    background-image: url("creditsDiv.png");
+    background-repeat: no-repeat;
+    margin: 0 0 100px 0;
+    padding: 0;
+}
+
+div.leftdivarea {
+    width: 219px;
+    height: auto;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+p.menuheaderpage {
+    width: 500px;
+    height: 20px;
+    padding: 0;
+    margin: 10px 0 0 20px;
+    border: none;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 26px;
+    text-shadow: 2px 2px 0.2em #000000;
+    text-align: center;
+    display: block;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    cursor: default;
+}
+div.cvsLogoHeader {
+    width: 560px;
+    height: 100px;
+    float: left;
+    position: relative;
+    display: block;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    margin: 0 0 10px 0;
+    padding: 0;
+    border: none;
+    border-radius: 5pt;
+}
+p.cvsLogoHeaderTEXT {
+    width: 540px;
+    height: 30px;
+    padding: 0;
+    margin: 0 0 0 0;
+    border: none;
+    color: #000000;
+    font-family: customfont1;
+    font-size: 26px;
+    text-shadow: 1px 1px 0.1em #000000;
+    text-align: center;
+    display: block;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: none;
+    background-repeat: no-repeat;
+    cursor: default;
+}
+div.centerdivarea {
+    width: 560px;
+    height: auto;
+    min-height: 1040px;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+div.loadContentHere {
+    width: 560px;
+    height: auto;
+    min-height: 1250px;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0 0 10px 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #b98e74;
+    border-radius: 5pt;
+}
+div.rightdivarea {
+    width: 220px;
+    height: auto;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+div.bkbmenucls {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 10px 0 0 10px;
+    background-color: transparent;
+}
+
+p.suggestpcls {
+    width: 180px;
+    height: 20px;
+    padding: 5px 0 5px 0;
+    margin: 20px 0 0 20px;
+    position: relative;
+    display: block;
+    float: left;
+    background-color: transparent;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 0.1em #000000;
+    cursor: default;
+}
+
+div.comers {
+    display: block;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0 0 10px 10px;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #b98e74;
+    border-radius: 5pt;
+}
+
+button.bkbmenubuttons {
+    width: 200px;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #b98e74;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 0.1em #000000;
+    display: block;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    transition: color 0.2s, border 0.2s, height 0.1s, text-shadow 0.2s, background-image 0.2s;
+    -moz-transition: color 0.2s, border 0.2s, height 0.1s, text-shadow 0.2s, background-image 0.2s;
+    -webkit-transition: color 0.2s, border 0.2s, height 0.1s, text-shadow 0.2s, background-image 0.2s;
+    -o-transition: color 0.2s, border 0.2s, height 0.1s, text-shadow 0.2s, background-image 0.2s;
+}
+button:hover.bkbmenubuttons
+{ color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+button:active.bkbmenubuttons
+{ height: 45px; color: #ffefb3; border-bottom: 1px solid #c9b66f; background-image:url("1x1particleClick.png"); }
+
+div.neDivCls {
+    width: 540px;
+    height: 200px;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    margin: 10px 0 0 10px;
+    padding: 0;
+    border: none;
+    border-radius: 5pt;
+    transition: background-image 0.2s, background-color 0.2s;
+    -webkit-transition: background-image 0.2s, background-color 0.2s;
+    -moz-transition: background-image 0.2s, background-color 0.2s;
+    -o-transition: background-image 0.2s, background-color 0.2s;
+}
+div:hover.neDivCls  { background-image:url("1x1particleHover.png"); }
+div:active.neDivCls { background-image:url("1x1particleClick.png"); }
+div.neDivCls:hover .neTitCls{ color: #ead072; text-shadow: 0 0 0.1em #ead072; }
+div.neDivCls:hover .neTxtCls{ color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+div.neDivCls:active .neTitCls{ color: #ffffff; text-shadow: 0 0 0.1em #ead072; }
+div.neDivCls:active .neTxtCls{ color: #ffffff; text-shadow: 0 0 0.5em #ead072; }
+div.neDivCls:hover .neImgCls{ opacity: 0.6; }
+img.neImgCls {
+    position: relative;
+    display: block;
+    float: left;
+    width: 240px;
+    height: 180px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0;
+    border-radius: 5pt;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+}
+iframe.neVidCls {
+    position: relative;
+    display: block;
+    float: left;
+    width: 240px;
+    height: 180px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0;
+}
+p.neTitCls {
+    width: 270px;
+    height: 18px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 0 0;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 0.1em #000000;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: default;
+    border: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s;
+}
+textarea.neTxtCls {
+    width: 270px;
+    height: 150px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-shadow: 1px 1px 0.1em #000000;
+    background-color: transparent;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    cursor: default;
+    transition: color 0.2s, text-shadow 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s;
+}
+
+button.NEarrowcls {
+    position: relative;
+    display: block;
+    float: left;
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 0.1em #000000;
+    margin: 10px 0 0 180px;
+    border-radius: 5pt;
+    transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+}
+button:hover.NEarrowcls
+{ color: #ead072; text-shadow: 0 0 0.5em #ead072; background-image:url("1x1particleHover.png"); }
+button:active.NEarrowcls
+{ color: #ffffff; text-shadow: 0 0 0.5em #ead072; background-image:url("1x1particleClick.png"); }
+
+div.twnDivCls {
+    width: 540px;
+    height: 120px;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    margin: 10px 0 0 10px;
+    padding: 0;
+    border: none;
+    border-radius: 5pt;
+    transition: background-image 0.2s, background-color 0.2s;
+    -webkit-transition: background-image 0.2s, background-color 0.2s;
+    -moz-transition: background-image 0.2s, background-color 0.2s;
+    -o-transition: background-image 0.2s, background-color 0.2s;
+}
+div:hover.twnDivCls  { background-image:url("1x1particleHover.png"); }
+div:active.twnDivCls { background-image:url("1x1particleClick.png"); }
+div.twnDivCls:hover .twnTitCls{ color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+div.twnDivCls:active .twnTitCls{ color: #ffffff; text-shadow: 0 0 0.5em #ead072; }
+div.twnDivCls:hover .twnImgCls{ opacity: 0.6; }
+
+p.twnTitCls {
+    width: 410px;
+    height: 20px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 40px 0 40px 0;
+    margin: 10px 0 0 0;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 0.1em #000000;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: default;
+    border: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s;
+}
+
+img.twnImgCls {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0;
+    border-radius: 5pt;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+}
+
+div.svcDivCls {
+    width: 540px;
+    height: 170px;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    margin: 10px 0 0 10px;
+    padding: 0;
+    border: none;
+    border-radius: 5pt;
+    transition: background-image 0.2s, background-color 0.2s;
+    -webkit-transition: background-image 0.2s, background-color 0.2s;
+    -moz-transition: background-image 0.2s, background-color 0.2s;
+    -o-transition: background-image 0.2s, background-color 0.2s;
+}
+div:hover.svcDivCls  { background-image:url("1x1particleHover.png"); }
+div:active.svcDivCls { background-image:url("1x1particleClick.png"); }
+div.svcDivCls:hover .svcTitCls{ color: #ead072; text-shadow: 0 0 0.1em #ead072; }
+div.svcDivCls:hover .svcTxtCls{ color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+div.svcDivCls:active .svcTitCls{ color: #ffffff; text-shadow: 0 0 0.1em #ead072; }
+div.svcDivCls:active .svcTxtCls{ color: #ffffff; text-shadow: 0 0 0.5em #ead072; }
+div.svcDivCls:hover .svcImgCls{ opacity: 0.6; }
+img.svcImgCls {
+    position: relative;
+    display: block;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0;
+    border-radius: 5pt;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+}
+p.svcTitCls {
+    width: 360px;
+    height: 18px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 0 0;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 0.1em #000000;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: default;
+    border: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s;
+}
+textarea.svcTxtCls {
+    width: 360px;
+    height: 120px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-shadow: 1px 1px 0.1em #000000;
+    background-color: transparent;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    cursor: default;
+    transition: color 0.2s, text-shadow 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s;
+}
+
+button.cvsBackBtn {
+    position: relative;
+    display: block;
+    float: left;
+    width: 200px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 0.1em #000000;
+    margin: 10px 0 0 10px;
+    border-radius: 5pt;
+    transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s, background-image 0.2s;
+}
+button:hover.cvsBackBtn
+{ color: #ead072; text-shadow: 0 0 0.5em #ead072; background-image:url("1x1particleHover.png"); }
+button:active.cvsBackBtn
+{ color: #ffffff; text-shadow: 0 0 0.5em #ead072; background-image:url("1x1particleClick.png"); }
+
+p.twnNameLabel {
+    width: 340px;
+    height: 20px;
+    padding: 8px 0 5px 0;
+    margin: 10px 0 0 10px;
+    position: relative;
+    display: block;
+    float: left;
+    background-color: transparent;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 0.1em #000000;
+    cursor: default;
+}
+
+div.eDivCls {
+    width: 540px;
+    height: 170px;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    margin: 10px 0 0 10px;
+    padding: 0;
+    border: none;
+    border-radius: 5pt;
+    transition: background-image 0.2s, background-color 0.2s;
+    -webkit-transition: background-image 0.2s, background-color 0.2s;
+    -moz-transition: background-image 0.2s, background-color 0.2s;
+    -o-transition: background-image 0.2s, background-color 0.2s;
+}
+div:hover.eDivCls  { background-image:url("1x1particleHover.png"); }
+div:active.eDivCls { background-image:url("1x1particleClick.png"); }
+div.eDivCls:hover .eTitCls{ color: #ead072; text-shadow: 0 0 0.1em #ead072; }
+div.eDivCls:hover .eTxtCls{ color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+div.eDivCls:active .eTitCls{ color: #ffffff; text-shadow: 0 0 0.1em #ead072; }
+div.eDivCls:active .eTxtCls{ color: #ffffff; text-shadow: 0 0 0.5em #ead072; }
+div.eDivCls:hover .eImgCls{ opacity: 0.6; }
+img.eImgCls {
+    position: relative;
+    display: block;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 10px;
+    padding: 0;
+    border-radius: 5pt;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+}
+p.eTitCls {
+    width: 360px;
+    height: 18px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 5px 0 5px 0;
+    margin: 10px 0 0 0;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 0.1em #000000;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: default;
+    border: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s;
+}
+textarea.eTxtCls {
+    width: 360px;
+    height: 120px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-shadow: 1px 1px 0.1em #000000;
+    background-color: transparent;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    cursor: default;
+    transition: color 0.2s, text-shadow 0.2s;
+    -moz-transition: color 0.2s, text-shadow 0.2s;
+    -webkit-transition: color 0.2s, text-shadow 0.2s;
+    -o-transition: color 0.2s, text-shadow 0.2s;
+}
+
+p.LorePar {
+    width: 530px;
+    height: 20px;
+    position: relative;
+    float: left;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 0.1em #000000;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    margin: 10px 0 0 10px;
+    padding: 15px 0 15px 10px;
+    border: none;
+    cursor: default;
+    border-radius: 5pt;
+    transition: background-image 0.2s, background-color 0.2s, color 0.2s, text-shadow 0.2s;
+    -webkit-transition: background-image 0.2s, background-color 0.2s, color 0.2s, text-shadow 0.2s;
+    -moz-transition: background-image 0.2s, background-color 0.2s, color 0.2s, text-shadow 0.2s;
+    -o-transition: background-image 0.2s, background-color 0.2s, color 0.2s, text-shadow 0.2s;
+}
+p:hover.LorePar   { background-image:url("1x1particleHover.png"); color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+p:active.LorePar  { background-image:url("1x1particleClick.png"); color: #ffffff; text-shadow: 0 0 0.5em #ead072; }
+
+
+/* ------------ OPENNER PAGE ------------ */
+
+div.bkbooutmostDiv {
+    width: 1010px;
+    height: auto;
+    min-height: 300px;
+    margin: 10px auto 0 auto;
+    background-color: transparent;
+    position: relative;
+    display: block;
+    border: none;
+}
+
+div.addsHolder {
+    width: 200px;
+    height: auto;
+    position: relative;
+    display: block;
+    float: left;
+    background-color: transparent;
+    background-image: url("contentBGparticle.png");
+    background-repeat: repeat;
+    margin: 0 5px 100px 0;
+    padding: 0;
+    border: hidden;
+    border-radius: 5pt;
+}
+
+div.bkboMainDiv {
+    width: 800px;
+    height: auto;
+    min-height: 300px;
+    margin: 0 0 100px 0;
+    padding: 0 0 30px 0;
+    background-color: transparent;
+    background-image: url("contentBGparticle.png");
+    background-repeat: repeat;
+    position: relative;
+    display: block;
+    float: left;
+    border: hidden;
+    border-radius: 5pt;
+}
+
+button.bkboClose {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    float: left;
+    display: block;
+    margin: 10px 300px 10px 300px;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    border: hidden;
+    border-radius: 5pt;
+    outline: none;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 0.1em #000000;
+    transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+    -webkit-transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+    -moz-transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+    -o-transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+}
+button:hover.bkboClose   { background-image:url("1x1particleHover.png"); color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+button:active.bkboClose  { background-image:url("1x1particleClick.png"); color: #ffffff; text-shadow: 0 0 0.5em #ead072; }
+
+div.bkboimgholder {
+    width: 800px;
+    height: 300px;
+    margin: 0 auto 0 auto;
+    background-color: #000000;
+    position: relative;
+    float: left;
+    display: block;
+    border: none;
+}
+img.bkboImg {
+    width: auto;
+    height: 300px;
+    max-width: 800px;
+    padding: 0;
+    display: block;
+    margin: 0 auto 0 auto;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+p.bkboPname {
+    width: 800px;
+    height: 30px;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 28px;
+    text-shadow: 1px 1px 0.1em #000000;
+    text-align: center;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    position: relative;
+    display: block;
+    float: left;
+    cursor: default;
+}
+a.bkboPnameLink {
+    width: 200px;
+    height: 20px;
+    margin: 0 0 0 0;
+    padding: 0 300px 10px 300px;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 0.1em #000000;
+    text-align: center;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    position: relative;
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+    -webkit-transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+    -moz-transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+    -o-transition: background-image 0.2s, color 0.2s, text-shadow 0.2s;
+}
+a:hover.bkboPnameLink  { color: #ead072; text-shadow: 0 0 0.5em #ead072; }
+a:active.bkboPnameLink { color: #ffffff; text-shadow: 0 0 0.5em #ead072; }
+
+p.bkboPtown {
+    width: 800px;
+    height: 20px;
+    margin: 0 0 0 0;
+    padding: 0 0 5px 0;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 0.1em #000000;
+    text-align: center;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    position: relative;
+    display: block;
+    float: left;
+    cursor: default;
+}
+
+div.bkbohr {
+    width: 800px;
+    height: 1px;
+    background-color: #b98e74;
+    border: none;
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+textarea.bkbotxt {
+    width: 700px;
+    height: auto;
+    min-height: 100px;
+    margin: 0 0 10px 50px;
+    padding: 0;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px 0.1em #000000;
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+    float: left;
+    cursor: default;
+    border: none;
+    outline: none;
+    overflow: auto;
+    resize: none;
+}
+
+div.bkboImgsHolder {
+    width: 740px;
+    height: auto;
+    min-height: 125px;
+    margin: 0 0 10px 25px;
+    padding: 5px;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    position: relative;
+    float: left;
+    display: block;
+    border: none;
+    border-radius: 5pt;
+}
+
+img.bkbooneOfimgs {
+    width: auto;
+    height: 115px;
+    display: block;
+    position: relative;
+    float: left;
+    background-color: transparent;
+    padding: 0;
+    margin: 5px;
+    border: hidden;
+    border-radius: 5pt;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    cursor: pointer;
+}
+img:hover.bkbooneOfimgs { opacity: 0.7; }
+img:active.bkbooneOfimgs { opacity: 0.5; }
+
+div.bkboVidsHolder {
+    width: 750px;
+    height: auto;
+    min-height: 190px;
+    margin: 0 0 10px 15px;
+    padding: 5px;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    position: relative;
+    float: left;
+    display: block;
+    border: none;
+    border-radius: 5pt;
+}
+
+iframe.bkboVideos {
+    width: 240px;
+    height: 180px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    padding: 0;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+/* about us page: */
+textarea.abouttext {
+    width: 900px;
+    height: 200px;
+    position: relative;
+    float: left;
+    margin: 25px 0 0 50px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+a.addImgHolder {
+    width: auto;
+    height: auto;
+    display: block;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+img.addImage {
+    width: 190px;
+    height: auto;
+    max-height: 290px;
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5pt;
+}
+
+div.comerso {
+    display: block;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0 10px 10px 0;
+    background-color: transparent;
+    background-image: url("1x1particle.png");
+    background-repeat: repeat;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #b98e74;
+    border-radius: 5pt;
+}
+
+div.starDivind {
+    width: 150px;
+    height: 30px;
+    margin: 0 325px 10px 325px;
+    background-color: transparent;
+    background-image: url("bkbstars.png");
+    background-position: 0 150px;
+    float: left;
+    display: block;
+    position: relative;
+    padding: 0;
+}
+
+p.visitsPar {
+    width: 300px;
+    height: 20px;
+    display: block;
+    float: right;
+    position: relative;
+    color: #b98e74;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    margin: 10px 30px 0 0;
+    padding: 0;
+    cursor: default;
+    text-align: right;
+}
+
+iframe#ifmapbkb {
+    width: 960px;
+    height: 560px;
+    display: block;
+    float: left;
+    position: relative;
+    margin: 20px;
+    border: none;
+    border-radius: 5pt;
+    outline: none;
+    background-color: transparent
+}
